@@ -1,0 +1,34 @@
+.one{
+    height: 30px;
+}
+
+.three{
+    width: 40px;
+    margin-left: 20px;
+}
+hr{
+    visibility: hidden;
+}
+@media only screen and (max-width: 321px) {
+.one{
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.two{
+    font-size: small;
+}
+
+.three{
+    margin-right: 20px;
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+}
+hr{
+    border-top: 3px solid white;
+    visibility: visible;
+}
+}

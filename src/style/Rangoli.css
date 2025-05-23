@@ -1,0 +1,596 @@
+/* Base Styles */
+.fw {
+  font-weight: bolder;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.fw1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #34495e;
+}
+
+/* Main Container */
+.container-xl {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.text-center.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* Results Announcement Section */
+.baground {
+  background-color: #f8f9fa;
+  border-left: 5px solid #e37221;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem !important;
+  margin-bottom: 3rem;
+}
+
+/* Participation Certificate Button */
+.partdownload {
+  color: white;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  background: linear-gradient(135deg, #e37221 0%, #dd8d37 100%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(227, 114, 33, 0.3);
+  transition: all 0.3s ease;
+}
+
+.partdownload:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(227, 114, 33, 0.4);
+}
+
+/* Winners Gallery */
+.row.justify-content-center {
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-container {
+  height: 250px;
+  overflow: hidden;
+}
+
+.painting-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .painting-image {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.badge {
+  font-size: 16px;
+  padding: 8px 16px !important;
+  border-radius: 20px;
+}
+
+/* Participants Gallery */
+.slick-slider {
+  margin-bottom: 4rem;
+}
+
+.slick-track {
+  display: flex;
+  gap: 15px;
+}
+
+.slick-slide {
+  padding: 0 5px;
+}
+
+.painting-slider-image {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.painting-slider-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Arrows */
+.custom-arrow {
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  color: #e37221;
+  font-size: 20px;
+}
+
+.custom-arrow:hover {
+  background: #f8f9fa;
+}
+
+.next-arrow {
+  right: -20px;
+}
+
+.prev-arrow {
+  left: -20px;
+}
+
+/* Dots */
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bdc3c7;
+}
+
+.slick-dots li.slick-active button {
+  background: #e37221;
+  width: 30px;
+  border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .row.justify-content-center {
+    gap: 1rem;
+  }
+
+  .card-img-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fw {
+    font-size: 24px;
+  }
+
+  .fw1 {
+    font-size: 18px;
+  }
+
+  .baground {
+    padding: 1.5rem !important;
+  }
+
+  .partdownload {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .card-img-container {
+    height: 180px;
+  }
+
+  .painting-slider-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .row.justify-content-center {
+    gap: 1.5rem;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .painting-slider-image {
+    height: 200px;
+  }
+
+  .custom-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .next-arrow {
+    right: -15px;
+  }
+
+  .prev-arrow {
+    left: -15px;
+  }
+}
+
+/* Popup Styles (unchanged) */
+.popup-overlay {
+  /* ... existing popup styles ... */
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: calc(var(--order) * 0.1s);
+  opacity: 0;
+}
+
+.slick-slider {
+  position: relative;
+  display: flex !important;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Category Selector Styles */
+.category-selector {
+  margin: 2rem 0;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn-group .btn {
+  flex: 1 1 auto;
+  min-width: 200px;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+}
+
+.btn-group .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #e37221 0%, #dd8d37 100%);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #e37221 0%, #dd8d37 100%) !important;
+  border: none;
+}
+
+.btn-outline-primary {
+  border: 2px solid #e37221;
+  color: #e37221;
+  background: white;
+}
+
+/* Modal Overlay Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.download-popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.download-popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.download-popup-close:hover {
+  color: #e37221;
+}
+
+.download-popup-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.download-popup-header h3 {
+  color: #e37221;
+  font-weight: 600;
+}
+
+.download-popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #e37221;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-submit {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #e37221;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #d1661d;
+}
+
+.download-link-container {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #e37221;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.download-link:hover {
+  color: #d1661d;
+  text-decoration: underline;
+}
+
+/* Make sure modal appears above everything */
+.modal-overlay {
+  z-index: 9999;
+}
+
+/* Ensure other content doesn't scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+.popuptitle {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+/* Responsive adjustments for category buttons */
+@media (max-width: 768px) {
+  .btn-group .btn {
+    min-width: 150px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
+/* Animation for category switching */
+.category-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .popuptitle {
+    font-size: 17px;
+    font-weight: bolder;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  /* Slider Container */
+  .slick-slider {
+    margin: 0 -10px 3rem;
+  }
+
+  /* Individual Slides */
+  .slick-slide {
+    padding: 0 8px;
+  }
+
+  /* Painting Images */
+  .painting-slider-image {
+    height: 180px;
+    border-radius: 6px;
+  }
+
+  /* Navigation Arrows */
+  .custom-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    top: 38%;
+  }
+
+  .next-arrow {
+    right: -12px;
+  }
+
+  .prev-arrow {
+    left: -12px;
+  }
+
+  .slick-dots {
+    bottom: -82px !important;
+    padding: 0 15px;
+  }
+
+  .slick-dots li {
+    margin: 0 4px;
+    width: auto;
+    height: auto;
+  }
+
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: rgba(227, 114, 33, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+  }
+
+  .slick-dots li.slick-active button {
+    background: #e37221;
+    width: 24px;
+  }
+
+  /* Touch target enhancement */
+  .slick-dots li button {
+    transform: scale(1);
+  }
+
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    transform: scale(1.2);
+  }
+  /* Touch improvements */
+  .painting-slider-image {
+    pointer-events: auto;
+  }
+}
