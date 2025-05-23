@@ -36,7 +36,12 @@ const AppPromotionPopup = ({ onClose }) => {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              <img src="/images/Google_Play.png" alt="" style={{ width: '200px' }} className='' />
+              <img
+                src="/images/Google_Play.png"
+                alt=""
+                style={{ width: "200px" }}
+                className=""
+              />
             </a>
             <p>Click to Install</p>
           </div>
@@ -150,43 +155,49 @@ const RangoliCompetition = () => {
     kids: [
       {
         id: 1,
-        name: "Child Winner 1",
-        image: "/images/kids/kid1.jpg",
-        position: "முதல் பரிசு"
+        name: "Sai daya",
+        image: "/images/winners/under9/V.Sai daya_8age.jpg",
+        position: "முதல் பரிசு",
+        regnum: "DRW087"
       },
       {
         id: 2,
-        name: "Child Winner 2",
-        image: "/images/kids/kid2.jpg",
-        position: "இரண்டாம் பரிசு"
+        name: "Lakshana",
+        image: "/images/winners/under9/K.Lakshana_8age.jpeg",
+        position: "இரண்டாம் பரிசு",
+        regnum: "DRW050"
       }
     ],
     teens: [
       {
         id: 1,
-        name: "Teen Winner 1",
-        image: "/images/teens/teen1.jpg",
-        position: "முதல் பரிசு"
+        name: "Tharun",
+        image: "/images/winners/under13/Tharun_11years.jpg",
+        position: "முதல் பரிசு",
+        regnum: "DRW007"
       },
       {
         id: 2,
-        name: "Teen Winner 2",
-        image: "/images/teens/teen2.jpg",
-        position: "இரண்டாம் பரிசு"
+        name: "Sudharshan",
+        image: "/images/winners/under13/sudharson_13yrs.jpg",
+        position: "இரண்டாம் பரிசு",
+        regnum: "DRW010"
       }
     ],
     adults: [
       {
         id: 1,
-        name: "Adult Winner 1",
-        image: "/images/adults/adult1.jpg",
-        position: "முதல் பரிசு"
+        name: "Priyadharshini",
+        image: "/images/winners/under18/Priyadharshini_15yrs.jpg",
+        position: "முதல் பரிசு",
+        regnum: "DRW036"
       },
       {
         id: 2,
-        name: "Adult Winner 2",
-        image: "/images/adults/adult2.jpg",
-        position: "இரண்டாம் பரிசு"
+        name: "Oviyan",
+        image: "/images/winners/under18/Oviyan_15yrs.jpg",
+        position: "இரண்டாம் பரிசு",
+        regnum: "DRW051"
       }
     ]
   };
@@ -195,97 +206,110 @@ const RangoliCompetition = () => {
     kids: [
       {
         id: 1,
-        name: "Child Winner 1",
-        image: "/images/kids/kid1.jpg"
+        name: "Devamithran",
+        image: "/images/specialprize/under9/A. Devamithran_7age.jpg",
+        regnum: "DRW080"
       },
       {
         id: 2,
-        name: "Child Winner 2",
-        image: "/images/kids/kid2.jpg"
+        name: "Deepthi",
+        image: "/images/specialprize/under9/Deepthi_8yrs.jpg",
+        regnum: "DRW035"
       },
       {
         id: 3,
-        name: "Child Winner 3",
-        image: "/images/kids/kid3.jpg"
+        name: "G.Kavin",
+        image: "/images/specialprize/under9/G.Kavin_9yrs.jpeg",
+        regnum: "DRW014"
       },
       {
         id: 4,
-        name: "Child Winner 2",
-        image: "/images/kids/kid2.jpg"
+        name: "Saicharan",
+        image: "/images/specialprize/under9/saicharan.jpg",
+        regnum: "DRW108"
       },
       {
         id: 5,
-        name: "Child Winner 3",
-        image: "/images/kids/kid3.jpg"
+        name: "Sanjith",
+        image: "/images/specialprize/under9/Sanjith_9yrs.jpg",
+        regnum: "DRW032"
       }
     ],
     teens: [
       {
         id: 1,
-        name: "Teen Winner 1",
-        image: "/images/teens/teen1.jpg"
+        name: "GANESHAPERUMAL",
+        image: "/images/specialprize/under13/GANESHAPERUMAL_13age.jpg",
+        regnum: "DRW006"
       },
       {
         id: 2,
-        name: "Teen Winner 2",
-        image: "/images/teens/teen2.jpg"
+        name: "H.Swetha",
+        image: "/images/specialprize/under13/H.Swetha_13age.jpg",
+        regnum: "DRW083"
       },
       {
         id: 3,
-        name: "Teen Winner 3",
-        image: "/images/teens/teen3.jpg"
+        name: "Hasini",
+        image: "/images/specialprize/under13/Hasini_14.jpg",
+        regnum: "DRW070"
       },
       {
         id: 4,
-        name: "Teen Winner 2",
-        image: "/images/teens/teen2.jpg"
+        name: "Iniya",
+        image: "/images/specialprize/under13/Iniya_13yrs.jpg",
+        regnum: "DRW0104"
       },
       {
         id: 5,
-        name: "Teen Winner 3",
-        image: "/images/teens/teen3.jpg"
-      }
-    ],
-    adults: [
-      {
-        id: 1,
-        name: "Adult Winner 1",
-        image: "/images/adults/adult1.jpg"
+        name: "K.Yuvaraj",
+        image: "/images/specialprize/under13/K.Yuvaraj_13.jpg",
+        regnum: "DRW049"
       },
       {
-        id: 2,
-        name: "Adult Winner 2",
-        image: "/images/adults/adult2.jpg"
+        id: 6,
+        name: "Maneesh",
+        image: "/images/specialprize/under13/Maneesh_13age.jpg",
+        regnum: "DRW044"
       },
       {
-        id: 3,
-        name: "Adult Winner 1",
-        image: "/images/adults/adult1.jpg"
+        id: 7,
+        name: "Jeevak kishore",
+        image: "/images/specialprize/under13/O.S.Jeevak kishore_14age.jpg",
+        regnum: "DRW092"
       },
       {
-        id: 4,
-        name: "Adult Winner 2",
-        image: "/images/adults/adult2.jpg"
+        id: 8,
+        name: "Soundaryalakshmi",
+        image: "/images/specialprize/under13/Soundaryalakshmi_12yrs.jpg",
+        regnum: "DRW037"
       },
       {
-        id: 5,
-        name: "Adult Winner 2",
-        image: "/images/adults/adult2.jpg"
+        id: 9,
+        name: "Sowbarniya",
+        image: "/images/specialprize/under13/Sowbarniya_14yrs.jpg",
+        regnum: "DRW043"
+      },
+      {
+        id: 10,
+        name: "Sudeep",
+        image: "/images/specialprize/under13/Sudeep_11yrs.jpg",
+        regnum: "DRW009"
       }
     ]
   };
 
   // Participants data for each category
   const participantsData = {
-    kids: Array.from({ length: 20 }, (_, i) => ({
+    kids: Array.from({ length: 33 }, (_, i) => ({
       id: i + 1,
       image: `/images/Under_9/kid_${i + 1}.jpg`
     })),
-    teens: Array.from({ length: 20 }, (_, i) => ({
+    teens: Array.from({ length: 48 }, (_, i) => ({
       id: i + 1,
       image: `/images/10-14/teen1_${i + 1}.jpg`
     })),
-    adults: Array.from({ length: 20 }, (_, i) => ({
+    adults: Array.from({ length: 17 }, (_, i) => ({
       id: i + 1,
       image: `/images/15-18/teen2_${i + 1}.jpg`
     }))
@@ -294,11 +318,11 @@ const RangoliCompetition = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -347,7 +371,7 @@ const RangoliCompetition = () => {
                 }`}
                 onClick={() => setActiveCategory("kids")}
               >
-                5-9 வயது பங்கேற்பாளர்கள்
+                9 வயதிற்குள் உள்ள பங்கேற்பாளர்கள்
               </button>
               <button
                 type="button"
@@ -412,13 +436,16 @@ const RangoliCompetition = () => {
                       className="img-fluid rounded shadow rangoli-slider-image"
                     />
                   </a>
-                  <div className="card-body text-center">
+                  <div className="text-center">
                     <h5 className="card-title text-success fw1">
                       {winner.name}
                     </h5>
                     <span className="badge bg-warning text-dark p-2">
                       {winner.position}
                     </span>
+                  </div>
+                  <div className="text-center" style={{ fontWeight: "bolder" }}>
+                    {winner.regnum}
                   </div>
                 </div>
               </div>
@@ -431,31 +458,44 @@ const RangoliCompetition = () => {
             {activeCategory === "adults" && " சிறப்பு பரிசு"}
           </h3>
           <div className="row justify-content-center mb-5">
-            {specialwinnersData[activeCategory].map((winner) => (
-              <div key={winner.id} className="col-md-6 col-lg-4 mb-4">
-                <div className="card h-100 shadow-sm">
-                  <a
-                    href={winner.image}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={winner.image}
-                      alt={`winner Painting ${winner.id}`}
-                      className="img-fluid rounded shadow rangoli-slider-image"
-                    />
-                  </a>
-                  <div className="card-body text-center">
-                    <h5 className="card-title text-success fw1">
-                      {winner.name}
-                    </h5>
-                    <span className="badge bg-warning text-dark p-2">
-                      {winner.position}
-                    </span>
+            {specialwinnersData[activeCategory] &&
+            specialwinnersData[activeCategory].length > 0 ? (
+              specialwinnersData[activeCategory].map((winner) => (
+                <div key={winner.id} className="col-md-2 col-lg-2 h-auto mb-4">
+                  <div className="card h-100 shadow-sm">
+                    <a
+                      href={winner.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={winner.image}
+                        alt={`winner Painting ${winner.id}`}
+                        className="img-fluid rounded shadow rangoli-slider-image"
+                      />
+                    </a>
+                    <div className="card-body text-center">
+                      <h5 className="card-title text-success fw1">
+                        {winner.name}
+                      </h5>
+                      <span className="badge bg-warning text-dark p-2">
+                        {winner.position}
+                      </span>
+                    </div>
+                    <div
+                      className="text-center"
+                      style={{ fontWeight: "bolder" }}
+                    >
+                      {winner.regnum}
+                    </div>
                   </div>
                 </div>
+              ))
+            ) : (
+              <div className="col-12 text-center">
+                <p className="text-muted">சிறப்பு பரிசு இல்லை</p>
               </div>
-            ))}
+            )}
           </div>
 
           {/* Participants Gallery */}
